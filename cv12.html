@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashed Humaid - CV</title>
+    <style>
+        /* Previous styles remain the same */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 5px #4f46e5, 0 0 10px #4f46e5, 0 0 15px #4f46e5;
+            }
+            50% {
+                box-shadow: 0 0 10px #4f46e5, 0 0 20px #4f46e5, 0 0 25px #4f46e5;
+            }
+            100% {
+                box-shadow: 0 0 5px #4f46e5, 0 0 10px #4f46e5, 0 0 15px #4f46e5;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .header {
+            background: linear-gradient(to right, #1f2937, #111827);
+            color: white;
+            padding: 2rem;
+        }
+
+        .name-title-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+        }
+
+        .title-box {
+            background: rgba(79, 70, 229, 0.1);
+            border: 1px solid #4f46e5;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            animation: glow 2s infinite;
+        }
+
+        /* Rest of the previous styles remain the same */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .section h2 {
+            color: #1f2937;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .details div {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            transition: transform 0.3s;
+        }
+
+        .details div:hover {
+            transform: translateX(10px);
+        }
+
+        .skills div {
+            background: #f3f4f6;
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .skills div:hover {
+            background: #e5e7eb;
+            transform: scale(1.05);
+        }
+
+        .education-card {
+            background: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: all 0.3s;
+        }
+
+        .education-card:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            body {
+                padding: 1rem;
+            }
+            
+            .education-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name-title-container">
+                <h1>Rashed Humaid</h1>
+                <div class="title-box">Web Developer</div>
+            </div>
+            <p>Motivated high school student excelling in computer science and web design. Achieved third place in the Emirates Skills competition, demonstrating exceptional abilities and a deep-rooted passion for programming, problem-solving, and innovative projects that AI advances and a tech mindset create. Passionate about technology's future impact.</p>
+        </div>
+        
+        <!-- Rest of the HTML remains the same -->
+        <div class="content">
+            <div class="left-column">
+                <div class="section details">
+                    <h2>DETAILS</h2>
+                    <div>
+                        <span>📍</span>
+                        <span>Riyadh City, UAE</span>
+                    </div>
+                    <div>
+                        <span>📱</span>
+                        <a href="tel:9710507411101">9710507411101</a>
+                    </div>
+                    <div>
+                        <span>📧</span>
+                        <a href="mailto:rashed.humaid101@gmail.com">rashed.humaid101@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="section links">
+                    <h2>LINKS</h2>
+                    <div>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                    <div>
+                        <a href="#">GitHub</a>
+                    </div>
+                    <div>
+                        <a href="#">Facebook</a>
+                    </div>
+                    <div>
+                        <a href="#">Snapchat</a>
+                    </div>
+                </div>
+
+                <div class="section skills">
+                    <h2>SKILLS</h2>
+                    <div>Programming Languages</div>
+                    <div>Programming</div>
+                    <div>Web design</div>
+                    <div>Flutter</div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section">
+                    <h2>EMPLOYMENT HISTORY</h2>
+                    <div class="education-card">
+                        <p><em>Ready to start professional journey</em></p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>EDUCATION</h2>
+                    <div class="education-card">
+                        <div class="education-header">
+                            <h3>Grade 10 student, ATHS Baniyas</h3>
+                            <span>Nov 2023 — Mar 2027</span>
+                        </div>
+                        <p>As a dedicated grade 10 student at Applied Technology High School (ATHS), I am deeply engaged in technical and academic pursuits. Current 1st Semester GPA: 83.9. ATHS has provided me founded in computer science, programming, artificial intelligence, technology, and web design and actively contribute to innovative projects.</p>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="education-header">
+                            <h3>Undergrad, Harvard college</h3>
+                            <span>2024 — 2025</span>
+                        </div>
+                        <p>Completed various online courses, including courses from the CS50 series, gaining deep insights into computer science and engineering. Demonstrated commitment to continuous learning and personal development through rigorous academic coursework.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
